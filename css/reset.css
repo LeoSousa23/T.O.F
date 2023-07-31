@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-ul li {
+section ul li {
   list-style: inside;
   padding-block: .5rem
 }
