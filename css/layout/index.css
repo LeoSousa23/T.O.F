@@ -1,0 +1,69 @@
+:root {
+  /* typograph colors */
+  --main-black: #000000;
+  --main-white: #ffffff;
+  --main-green: #4e6b31;
+  --main-green-dark: #37432c;
+  /* design colors */
+  --icon-color: #0b93e2;
+  --button-additional: #cde9ff;
+  --hover-buttom: #4e59bb;
+  --accented-elements: #316347;
+  --accented-element-h1: #6dbea1;
+  --user-rating: #30a827;
+  --hover-icons-footer: #999950;
+  --button-card-prod: #78a34d;
+  --button-review-hov: #6fc368;
+  --button-review: rgba(111, 195, 104, 0.5);
+}
+
+.hero {
+  padding: 2rem;
+
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+
+  height: calc(70vh - 7rem);
+  max-height: 40rem;
+
+  color: var(--main-white);
+  background-blend-mode: color;
+  background: rgba(0, 0, 0, 0.7) url(../../image/hero-1.jpg) no-repeat center center/cover;
+}
+
+.hero h1 {
+  color: var(--accented-element-h1);
+  letter-spacing: .3rem;
+}
+
+.hero p {
+  margin-top: 1rem;
+  letter-spacing: .3rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+h1, h2, h3 {
+ color: var(--main-green);
+}
+
+main section,
+aside {
+  padding-inline: 2rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    margin: 2rem;
+    border-radius: .4rem;
+  }
+
+  .related-issues {
+    margin: 2rem;
+  }
+}

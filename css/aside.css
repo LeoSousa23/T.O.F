@@ -1,0 +1,23 @@
+:root {
+  --main-green: #4e6b31;
+}
+
+.related-issues {
+  text-align: center;
+}
+
+.related-issues h3 {
+  color: var(--main-green);
+}
+
+.related-issues a {
+  display: block;
+  margin-block: 1rem;
+  font-weight: 600;
+  transition: color .3s;
+}
+
+.related-issues a:hover {
+  color: var(--main-green);
+  text-decoration: underline;
+}

@@ -1,0 +1,152 @@
+:root {
+  --main-black: #000000;
+  --main-white: #ffffff;
+  --main-green: #4e6b31;
+  --accented-element-h1: #6dbea1;
+}
+
+.header {
+  padding-inline: 1.6rem;
+
+  background: var(--main-white);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+
+.nav {
+  height: 7rem;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: none;
+  width: 5rem;
+}
+
+.logo-text {
+  display: block;
+  width: 20rem;
+  /* color: var(--main-green); */
+}
+
+.nav-list {
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-list a {
+  padding: 1.6rem;
+  color: var(--main-black);
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  border-radius: 2rem;
+  transition: background .6s ease-in-out;
+}
+
+.nav-list a:hover {
+  color: var(--accented-element-h1);
+}
+
+.hamburger {
+  display: none;
+  border: none;
+  background: none;
+  border-top: .3rem solid var(--main-black);
+  cursor: pointer;
+}
+
+.hamburger::after,
+.hamburger::before {
+  content: " ";
+  display: block;
+  width: 3rem;
+  height: .3rem;
+  background: currentColor;
+  margin-top: .5rem;
+  position: relative;
+  transition: 0.3s;
+}
+
+@media (max-width: 426px) {
+  .logo {
+    display: block;
+  }
+
+  .logo-text {
+    display: none;
+  }
+}
+
+@media (max-width: 880px) {
+  .hamburger {
+    display: block;
+    z-index: 1;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: var(--main-white); /* cor do menu ativo */
+    backdrop-filter: blur(.4rem);
+    clip-path: circle(10rem at 90% -15%);
+    transition: 1s ease-out;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+
+    pointer-events: none;
+  }
+
+  .nav-list a {
+    opacity: 0;
+    transition: .3s;
+  }
+
+  .nav-list a:hover {
+    color: var(--accented-element-h1);
+  }
+
+  /* Estilos ativos */
+  .nav.active .nav-list {
+    clip-path: circle(150rem at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  .nav.active .hamburger {
+    position: fixed;
+    top: 2.6rem;
+    right: 1.6rem;
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -.8rem;
+  }
+}

@@ -1,0 +1,14 @@
+@media (min-width: 1024px) {  
+  .grid {
+    display:grid;
+    grid-template-areas:"a a a b";
+  }
+  
+  main {
+    grid-area: a;
+  }
+  
+  aside {
+    grid-area: b;
+  }
+}
