@@ -36,21 +36,26 @@
 .hero h1 {
   color: var(--accented-element-h1);
   letter-spacing: .3rem;
+  margin: 0;
 }
 
 .hero p {
   margin-top: 1rem;
   letter-spacing: .3rem;
+  text-align: center;
 }
 
 section {
-  margin: 3rem 0;
+  margin-bottom: 3rem;
   padding: 0 2rem;
+}
+
+section p {
   text-align: justify;
 }
 
 h1, h2, h3 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   color: var(--main-green-dark);
 }
 
