@@ -44,15 +44,16 @@
 }
 
 section {
-  margin-bottom: 3rem;
+  margin: 3rem 0;
+  padding: 0 2rem;
   text-align: justify;
 }
 
 h1, h2, h3 {
- color: var(--main-green);
+  margin-bottom: 3rem;
+  color: var(--main-green-dark);
 }
 
-main section,
 aside {
   padding-inline: 2rem;
 }
