@@ -1,8 +1,28 @@
+:root {
+  --main-black: #000000;
+  --accented-element-h1: #6dbea1;
+  --color1: #c1c8b0;
+  --color5: #1a1f26;
+}
+
 footer {
   margin-top: 3rem;
   height: 7rem;
+  
   display: flex;
   align-items: center;
   justify-content: center;
+  
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  
+  color: var(--color1);
+  background-color: var(--color5);
+}
+
+footer a {
+  color: var(--color1);
+}
+
+footer a:hover {
+  color: var(--accented-element-h1);
 }
