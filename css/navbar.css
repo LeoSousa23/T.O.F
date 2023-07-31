@@ -3,12 +3,18 @@
   --main-white: #ffffff;
   --main-green: #4e6b31;
   --accented-element-h1: #6dbea1;
+  /* other colors */
+  --color1: #c1c8b0;
+  --color2: #879668;
+  --color3: #72988a;
+  --color4: #464e36;
+  --color5: #1a1f26;
 }
 
 .header {
   padding-inline: 1.6rem;
 
-  background: var(--main-white);
+  background: var(--color5);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 
   position: sticky;
@@ -45,13 +51,13 @@
 
 .nav-list a {
   padding: 1.6rem;
-  color: var(--main-black);
+  color: var(--main-white);
 
   font-weight: bold;
   text-transform: uppercase;
 
   border-radius: 2rem;
-  transition: background .6s ease-in-out;
+  transition:  .3s ease-in-out;
 }
 
 .nav-list a:hover {
@@ -102,7 +108,7 @@
     width: 100vw;
     height: 100vh;
 
-    background: var(--main-white); /* cor do menu ativo */
+    background: var(--color5); /* cor do menu ativo */
     clip-path: circle(10rem at 90% -15%);
     transition: 1s ease-out;
 
