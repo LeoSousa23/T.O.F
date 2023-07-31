@@ -59,6 +59,19 @@ h1, h2, h3 {
   color: var(--main-green-dark);
 }
 
+details {
+  margin: 1rem 0;
+  color: var(--main-green-dark);
+}
+
+strong {
+  color: var(--main-green-dark);
+}
+
+.requeriments a:hover {
+  text-decoration: underline;
+}
+
 aside {
   padding-inline: 2rem;
 }
