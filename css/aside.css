@@ -1,5 +1,6 @@
 :root {
   --main-green: #4e6b31;
+  --main-green-dark: #37432c;
 }
 
 .related-issues {
@@ -7,7 +8,7 @@
 }
 
 .related-issues h3 {
-  color: var(--main-green);
+  color: var(--main-green-dark);
 }
 
 .related-issues a {
