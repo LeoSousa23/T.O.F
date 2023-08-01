@@ -1,22 +1,3 @@
-:root {
-  /* typograph colors */
-  --main-black: #000000;
-  --main-white: #ffffff;
-  --main-green: #4e6b31;
-  --main-green-dark: #37432c;
-  /* design colors */
-  --icon-color: #0b93e2;
-  --button-additional: #cde9ff;
-  --hover-buttom: #4e59bb;
-  --accented-elements: #316347;
-  --accented-element-h1: #6dbea1;
-  --user-rating: #30a827;
-  --hover-icons-footer: #999950;
-  --button-card-prod: #78a34d;
-  --button-review-hov: #6fc368;
-  --button-review: rgba(111, 195, 104, 0.5);
-}
-
 .hero {
   padding: 2rem;
 
@@ -34,7 +15,7 @@
 }
 
 .hero h1 {
-  color: var(--accented-element-h1);
+  color: var(--main-green-bluish);
   letter-spacing: .3rem;
   margin: 0;
 }
@@ -70,10 +51,6 @@ strong {
 
 .requeriments a:hover {
   text-decoration: underline;
-}
-
-aside {
-  padding-inline: 2rem;
 }
 
 @media (min-width: 768px) {
