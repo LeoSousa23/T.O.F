@@ -21,6 +21,7 @@ footer {
 
 footer a {
   color: var(--color1);
+  transition: .3s;
 }
 
 footer a:hover {
