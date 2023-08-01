@@ -1,20 +1,7 @@
-:root {
-  --main-black: #000000;
-  --main-white: #ffffff;
-  --main-green: #4e6b31;
-  --accented-element-h1: #6dbea1;
-  /* other colors */
-  --color1: #c1c8b0;
-  --color2: #879668;
-  --color3: #72988a;
-  --color4: #464e36;
-  --color5: #1a1f26;
-}
-
 .header {
   padding-inline: 1.6rem;
 
-  background: var(--color5);
+  background: var(--main-blue-dark);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 
   position: sticky;
@@ -37,13 +24,12 @@
 
   padding: .1rem;
   border-radius: 50%;
-  border: .2rem solid var(--color1);
+  border: .2rem solid var(--main-green-light);
 }
 
 .logo-text {
   display: block;
   width: 20rem;
-  /* color: var(--main-green); */
 }
 
 .nav-list {
@@ -55,7 +41,7 @@
 
 .nav-list a {
   padding: 1.6rem;
-  color: var(--color1);
+  color: var(--main-green-light);
 
   font-weight: bold;
   text-transform: uppercase;
@@ -65,14 +51,14 @@
 }
 
 .nav-list a:hover {
-  color: var(--accented-element-h1);
+  color: var(--main-green-bluish);
 }
 
 .hamburger {
   display: none;
   border: none;
   background: none;
-  border-top: .3rem solid var(--color1);
+  border-top: .3rem solid var(--main-green-light);
   cursor: pointer;
 }
 
@@ -82,7 +68,7 @@
   display: block;
   width: 3rem;
   height: .3rem;
-  background: var(--color1);
+  background: var(--main-green-light);
   margin-top: .5rem;
   position: relative;
   transition: 0.3s;
@@ -112,7 +98,7 @@
     width: 100vw;
     height: 100vh;
 
-    background: var(--color5); /* cor do menu ativo */
+    background: var(--main-blue-dark); /* cor do menu ativo */
     clip-path: circle(10rem at 90% -15%);
     transition: 1s ease-out;
 
@@ -130,7 +116,7 @@
   }
 
   .nav-list a:hover {
-    color: var(--accented-element-h1);
+    color: var(--main-green-bluish);
   }
 
   /* Estilos ativos */
