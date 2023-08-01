@@ -26,26 +26,8 @@
   text-align: center;
 }
 
-section {
-  margin-bottom: 3rem;
-  padding: 0 2rem;
-}
-
-section p {
-  text-align: justify;
-}
-
-h1, h2, h3 {
-  margin-bottom: 2rem;
-  color: var(--main-green-dark);
-}
-
 details {
   margin: 1rem 0;
-  color: var(--main-green-dark);
-}
-
-strong {
   color: var(--main-green-dark);
 }
 
