@@ -1,6 +1,5 @@
-:root {
-  --main-green: #4e6b31;
-  --main-green-dark: #37432c;
+.related-issues {
+  padding-inline: 2rem;
 }
 
 .related-issues {
