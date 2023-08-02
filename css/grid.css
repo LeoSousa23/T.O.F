@@ -2,8 +2,16 @@
   .grid {
     display:grid;
     grid-template-areas:"a a a b";
+    background-color: var(--main-white);
+    padding: 0 4rem 2rem;
+    margin-bottom: 4rem;
+    border-radius: 0 0 1rem 1rem;
   }
   
+  body {
+    background-color: var(--main-green-light);  
+  }
+
   main {
     grid-area: a;
   }
