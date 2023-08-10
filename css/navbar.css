@@ -19,9 +19,7 @@
 }
 
 .logo {
-  display: none;
   width: 5rem;
-
   padding: .1rem;
   border-radius: 50%;
   border: .2rem solid var(--main-green-light);
@@ -72,16 +70,6 @@
   margin-top: .5rem;
   position: relative;
   transition: 0.3s;
-}
-
-@media (max-width: 426px) {
-  .logo {
-    display: block;
-  }
-
-  .logo-text {
-    display: none;
-  }
 }
 
 @media (max-width: 880px) {
