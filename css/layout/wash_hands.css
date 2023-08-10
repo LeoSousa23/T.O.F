@@ -1,0 +1,11 @@
+h2 {
+  margin-top: 3rem;
+}
+
+p {
+  padding-bottom: 2rem;
+}
+
+.grid {
+  min-height: calc(100vh - 14rem);
+}
