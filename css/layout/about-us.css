@@ -2,10 +2,6 @@ body {
   background-color: var(--main-green-light);
 }
 
-.container {
-  max-width: 1024px;
-}
-
 .content-grid {
   padding: 3rem;
   display: grid;
