@@ -1,0 +1,11 @@
+h2 {
+  margin-top: 3rem;
+}
+
+.myths p {
+  padding-bottom: 1rem;
+}
+
+.grid {
+  min-height: calc(100vh - 14rem);
+}
