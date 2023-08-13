@@ -23,6 +23,11 @@
   padding: .1rem;
   border-radius: 50%;
   border: .2rem solid var(--main-green-light);
+  transition: .3s;
+}
+
+.logo:hover {
+  border: .2rem solid var(--main-green-bluish);
 }
 
 .logo-text {

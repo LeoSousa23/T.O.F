@@ -1,0 +1,15 @@
+/* importar os estilos base */
+@import url(./base/reset.css);
+@import url(./base/fonts.css);
+@import url(./base/color.css);
+@import url(./base/default.css);
+
+/* importar os estilos de componentes */
+@import url(../components/button/styles.css);
+@import url(../components/navbar/styles.css);
+
+/* importar os estilos de layout */
+@import url(./layout/grid/styles.css);
+@import url(./layout/container/styles.css);
+@import url(./layout/aside/styles.css);
+@import url(./layout/footer/styles.css);

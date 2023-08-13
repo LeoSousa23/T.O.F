@@ -1,0 +1,43 @@
+.hero {
+  padding: 2rem;
+
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+
+  height: calc(70vh - 7rem);
+  max-height: 40rem;
+
+  color: var(--main-white);
+  background-blend-mode: color;
+  background: rgba(0, 0, 0, 0.7) url(../../assets/hero.jpg) no-repeat center center/cover;
+}
+
+.hero h1 {
+  color: var(--main-green-bluish);
+  letter-spacing: .3rem;
+  margin: 0;
+}
+
+.hero p {
+  margin-top: 1rem;
+  letter-spacing: .3rem;
+  text-align: center;
+}
+
+details {
+  margin: 1rem 0;
+  color: var(--main-green-dark);
+}
+
+.requeriments a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    margin: 2rem;
+    border-radius: .4rem;
+  }
+}

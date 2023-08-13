@@ -3,32 +3,26 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="shortcut icon" href="image/logo-mobile-old.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/assets/logo.svg" type="image/x-icon">
     <title>Técnicos Orientando Famílias</title>
     <!-- css -->
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/color.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/aside.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/container.css">
-    <link rel="stylesheet" href="css/layout/index.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="src/pages/home/styles.css">
     <!-- js -->
-    <script defer src="js/navbar.js"></script>
+    <script defer src="./src/components/navbar/script.js"></script>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <img src="image/logo-mobile-old.svg" alt="logomarca" class="logo">
+          <a href="./index.html">
+            <img src="./src/assets/logo.svg" alt="logomarca" class="logo">
+          </a>
           <button class="hamburger"></button>
           <ul class="nav-list">
             <li><a href="./index.html">início</a></li>
-            <li><a href="./pages/about-us.html">quem somos</a></li>
-            <li><a href="./pages/our-work.html">nosso trabalho</a></li>
+            <li><a href="./src/pages/about/index.html">quem somos</a></li>
+            <li><a href="./src/pages/work/index.html">nosso trabalho</a></li>
             <li><a href="#contact-us">fale conosco</a></li>
           </ul>
         </nav>
@@ -93,16 +87,16 @@
           <section id="contact-us">
             <h3>Fale conosco</h3>
             <p>Queremos estar sempre ao seu lado, compartilhando conhecimento e esclarecendo dúvidas sobre enfermagem. <br> Criamos um grupo no WhatsApp especialmente para você. Junte-se a nós e tenha acesso direto a orientações e trocas valiosas com nossa equipe e outros entusiastas da saúde. <br> Seja parte desta comunidade dedicada à enfermagem e ao cuidado com as pessoas. Basta clicar no link abaixo para entrar em nosso grupo. Esperamos por você</p>
-            <span class="background">
-              <a href="https://chat.whatsapp.com/HhCZFudItgQ4PwW53muRyD" class="social-link" target="_blank">WhatsApp</a>
+            <span class="button-center">
+              <a href="https://chat.whatsapp.com/HhCZFudItgQ4PwW53muRyD" class="button" target="_blank">WhatsApp</a>
             </span>
           </section>
         </main>
         <aside class="related-issues">
           <h3>Assuntos relacionados</h3>
-          <a href="pages/profile_question.html">Faça o teste de perfil profissional</a>
-          <a href="pages/wash_hands.html">Qual a importância de lavar bem as mãos?</a>
-          <a href="pages/mental-health.html">Saúde mental dos profissionais</a>
+          <a href="./src/pages/matters/profile-question/index.html">Faça o teste de perfil profissional</a>
+          <a href="./src/pages/matters/wash-hands/index.html">Qual a importância de lavar bem as mãos?</a>
+          <a href="./src/pages/matters/mental-health/index.html">Saúde mental dos profissionais</a>
         </aside>
       </div>
     </div>
