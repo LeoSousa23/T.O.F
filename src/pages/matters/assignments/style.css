@@ -1,0 +1,26 @@
+section p {
+  padding-block: .5rem;
+}
+
+.list-roman {
+  padding-block: 1rem;
+  list-style: upper-roman inside;
+}
+
+.list-alphabet {
+  list-style: lower-alpha inside;
+  padding-inline-start: 2rem;
+}
+
+ol li {
+  padding-block: .5rem;
+}
+
+li::marker {
+  font-weight: bold;
+}
+
+.assignments a:hover {
+  color: var(--main-green);
+  text-decoration: underline;
+}
