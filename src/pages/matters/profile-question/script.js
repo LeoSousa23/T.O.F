@@ -98,9 +98,9 @@ var QuizUI = {
 
     // Verifique a pontuação e exiba a mensagem apropriada
     if (quiz.score >= 9) {
-      gameOverHTML += "<p>Parabéns! Você tem perfil para trabalhar na área da saúde😄.</p>";
+      gameOverHTML += "<p>Parabéns! Você tem perfil para trabalhar na área da saúde. 😄</p>";
     } else {
-      gameOverHTML += "<p>Ah que pena, seu perfil não corresponde a área da saúde, mas tente novamente😕.</p>";
+      gameOverHTML += "<p>Ah que pena, seu perfil não corresponde a área da saúde, mas tente novamente. 😕</p>";
     }
 
     this.populateIdWithHTML("quiz", gameOverHTML);
