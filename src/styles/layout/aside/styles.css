@@ -23,3 +23,17 @@
   text-decoration: underline;
 }
 
+
+.related-issues_card {
+  text-align: justify;
+  padding: 1rem;
+  margin-block: 1rem;
+}
+
+.related-issues_card a {
+  margin: 0;
+}
+
+.related-issues_card p {
+  font-size: 1.4rem;
+}
