@@ -91,6 +91,20 @@ var QuizUI = {
     var currentQuestionNumber = quiz.currentQuestionIndex + 1;
     this.populateIdWithHTML("progress", "Questão " + currentQuestionNumber + " de " + quiz.questions.length);
   },
+
+  displayScore: function() {
+    var gameOverHTML = "<h1>Fim de teste</h1>";
+    gameOverHTML += "<h2> Sua pontuação é: " + quiz.score + " / 10 </h2>";
+
+    // Verifique a pontuação e exiba a mensagem apropriada
+    if (quiz.score >= 8) {
+      gameOverHTML += "<p>Parabéns! Você tem o perfil para enfermeiro.</p>";
+    } else {
+      gameOverHTML += "<p>Você não tem o perfil para enfermeiro, mas pode tentar novamente.</p>";
+    }
+
+    this.populateIdWithHTML("quiz", gameOverHTML);
+  },
 };
 
 // criar perguntas
