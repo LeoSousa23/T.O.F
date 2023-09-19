@@ -3,37 +3,53 @@
   margin: 3rem 0;
 }
 
-.related-issues {
-  text-align: center;
-}
-
 .related-issues h3 {
   color: var(--main-green-dark);
 }
 
-.related-issues a {
+.related-issues_grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-content: center;
+  justify-items: center;
+}
+
+.related-issues_card {
+  width: 100%;
+  max-width: 30rem;
+  overflow: hidden;
+  text-align: center;
+  border-radius: .8rem;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.related-issues_description {
+  padding: 0 2rem 2rem;
+}
+
+.related-issues_icons {
+  padding: 2rem;
+  background-color: var(--main-green-light);
+}
+
+.related-issues_icons i {
+  font-size: 4rem;
+}
+
+.related-issues_description a {
   display: block;
-  margin-block: 1rem;
   font-weight: 600;
+  margin-block: 1rem;
   transition: color .3s;
 }
 
-.related-issues a:hover {
+.related-issues_description a:hover {
   color: var(--main-green);
   text-decoration: underline;
 }
 
-
-.related-issues_card {
-  text-align: justify;
-  padding: 1rem;
-  margin-block: 1rem;
-}
-
-.related-issues_card a {
-  margin: 0;
-}
-
-.related-issues_card p {
+.related-issues_description p {
   font-size: 1.4rem;
+  text-align: justify;
 }
