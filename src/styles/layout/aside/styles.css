@@ -16,10 +16,12 @@
 }
 
 .related-issues_card {
+  display: flex;
+  align-items: center;
   width: 100%;
-  max-width: 30rem;
+  max-width: 40rem;
   overflow: hidden;
-  text-align: center;
+  /* text-align: center; */
   border-radius: .8rem;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
 }
@@ -29,6 +31,9 @@
 }
 
 .related-issues_icons {
+  display: grid;
+  place-items: center;
+  height: 100%;
   padding: 2rem;
   background-color: var(--main-green-light);
 }
